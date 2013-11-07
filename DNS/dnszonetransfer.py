@@ -1,4 +1,9 @@
 #!/usr/bin/env python
+#!/usr/bin/env python
+__author__ = "Lucas Kauffman"
+__copyright__ = "Lucas Kauffman"
+__email__ = "lucas@cloud101.eu"
+__license__ = "Creative Commons by-nc-sa 3.0 http://creativecommons.org/licenses/by-nc-sa/3.0/" 
 
 import dns.query,dns.zone,dns.resolver,sys,socket
 from argparse import ArgumentParser
