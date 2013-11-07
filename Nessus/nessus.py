@@ -152,5 +152,9 @@ def getDocuments(reportList,reportNumber):
 		getDocuments()
 	getUserInput()
 
-initSessionID()
-getUserInput()
+def main():
+	initSessionID()
+	getUserInput()
+
+if __name__ == '__main__':main()
+
