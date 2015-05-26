@@ -66,11 +66,15 @@ def createCSVFile(fileName,IPDirTupleList):
 
 
 def listDirectoriesAndFiles():
-	FILE = getFile()
+	global results
 	IPDirTupleList = list()
-	for line in FILE:
-		address = line.strip()
-		IPDirTupleList.append((address,listFTP(line)),)
+	if results.address is  None:
+		FILE = getFile()	
+		for line in FILE:
+			address = line.strip()
+			IPDirTupleList.append((address,listFTP(line)),)
+	else:
+		IPDirTupleList.append((results.address,listFTP(results.address)),)
 	return IPDirTupleList
 
 def main():
